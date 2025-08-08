@@ -1,0 +1,24 @@
+name: Render Pinger_1
+
+on:
+  schedule:
+    - cron: '*/8 * * * *'  # Every 8 minutes
+  workflow_dispatch:        # Optional: Manual trigger
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Test Ping
+        run: echo "This is a test ping at $(date)"
+
+      - name: Ping App 1
+        run: |
+          echo "Pinging ConnectSphere UD6F..."
+          curl -v https://connectsphere-ud6f.onrender.com/
+
+      - name: Ping App 2
+        run: |
+          echo "Pinging ConnectSphere Official..."
+          curl -v https://connectsphere-official.onrender.com/
