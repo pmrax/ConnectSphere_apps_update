@@ -15,10 +15,15 @@ jobs:
 
       - name: Ping App 1
         run: |
-          echo "Pinging ConnectSphere UD6F..."
+          echo "Pinging Xorynx User..."
           curl -v https://connectsphere-ud6f.onrender.com/
 
       - name: Ping App 2
         run: |
-          echo "Pinging ConnectSphere Official..."
+          echo "Pinging Xorynx Official Work..."
           curl -v https://connectsphere-official.onrender.com/
+
+      - name: Ping App 3
+        run: |
+          echo "Pinging Xorynx Official..."
+          curl -v https://xorynx-official.onrender.com/
