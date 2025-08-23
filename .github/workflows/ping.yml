@@ -27,3 +27,8 @@ jobs:
         run: |
           echo "Pinging Xorynx Official..."
           curl -v https://xorynx-official.onrender.com/
+
+      - name: Ping App 4
+        run: |
+          echo "Pinging Xorynx Internship..."
+          curl -v https://xorynx-internship.onrender.com/
