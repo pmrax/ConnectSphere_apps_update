@@ -25,7 +25,7 @@ jobs:
 
       - name: Ping App 3
         run: |
-          echo "Pinging Xorynx Official..."
+          echo "Pinging Xorynx Official More..."
           curl -v https://xorynx-official.onrender.com/
 
       - name: Ping App 4
@@ -37,3 +37,9 @@ jobs:
         run: |
           echo "Pinging Xorynx Silta..."
           curl -v https://xorynx-silta.onrender.com/
+
+      - name: Ping App 6
+        run: |
+          echo "Pinging Xorynx Opinion..."
+          curl -v https://xorynx-opinion.onrender.com/auth/signin
+          
