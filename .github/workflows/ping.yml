@@ -42,4 +42,9 @@ jobs:
         run: |
           echo "Pinging Xorynx Opinion..."
           curl -v https://xorynx-opinion.onrender.com/auth/signin
+
+      - name: Ping App 7
+        run: |
+          echo "Pinging Xorynx News..."
+          curl -v https://xorynx-news.onrender.com/
           
